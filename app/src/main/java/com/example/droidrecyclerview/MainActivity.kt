@@ -12,9 +12,7 @@ class MainActivity : AppCompatActivity() {
 
         val textView: TextView = findViewById(R.id.tvDisplay)
 
-        textView.setOnClickListener {
-            textView.text = Datasource().loadAffirmations().size.toString()
-        }
+        textView.text = Datasource().loadAffirmations().size.toString()
 
     }
 }
